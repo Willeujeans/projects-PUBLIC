@@ -1,0 +1,382 @@
+:root {
+  --primary-color: #FF5252;
+  --back-color: #1E202D;
+  --primary-font: white;
+}
+
+.CSS-container {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+#loadingBox {
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  font-size: 2rem;
+  color: var(--primary-color);
+  left: 1%;
+  top: 1%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-font);
+  overflow-x: hidden;
+  font-family: roboto, sans-serif;
+}
+.body-white {
+  background: var(--primary-font);
+  height: 100px;
+}
+.box {
+  position: relative;
+  background: var(--back-color);
+  width: 900px;
+  height: 500px;
+  overflow: hidden;
+}
+.box-border-container {
+  left: 5%;
+  top: 25%;
+  position: absolute;
+  height: 300px;
+  width: 750px;
+}
+.box-border {
+  z-index: 5;
+  position: absolute;
+  border: 1px solid var(--primary-color);
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.line {
+  position: absolute;
+  top: 5%;
+  right: 40%;
+  border-top: 1px solid var(--primary-color);
+  width: 400px;
+}
+.first {
+  font-family: roboto, sans-serif;
+  font-weight: 100;
+  position: absolute;
+  color: var(--primary-font);
+  left: 3rem;
+  margin-left: 2.5rem;
+  margin-right: 1rem;
+  text-indent: 2rem;
+}
+.second {
+  font-family: roboto, sans-serif;
+  font-weight: 100;
+  position: absolute;
+  color: var(--primary-font);
+  top: 50%;
+  left: 3rem;
+  margin-left: 2.5rem;
+  margin-right: 1rem;
+  text-indent: 2rem;
+}
+.patchNotes {
+  font-family: roboto, sans-serif;
+  position: absolute;
+  right: 11%;
+  color: var(--primary-font);
+  font-weight: 400;
+}
+.panel-text-container {
+  position: absolute;
+  z-index: 10;
+  transform: rotate(90deg);
+  right: 0;
+  top: 25%;
+}
+.panel-text {
+  font-family: roboto, sans-serif;
+  color: var(--back-color);
+  font-weight: 400;
+  font-size: .5rem;
+}
+.panelSmaller {
+  z-index: 6;
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 500px;
+  background: var(--primary-color);
+}
+.panelSmallerRotated {
+  z-index: 6;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 150px;
+  right: 1px;
+  width: 40px;
+  height: 100px;
+  background: var(--primary-color);
+}
+.panel {
+  z-index: 6;
+  position: absolute;
+  right: 0;
+  width: 70px;
+  height: 180px;
+  background: var(--primary-color);
+}
+.panel-square {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--back-color);
+  width: 20px;
+  height: 10px;
+}
+.panelInside {
+  font-family: roboto, sans-serif;
+  z-index: 6;
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 100%;
+  background: var(--primary-color);
+}
+.panelInside-text-container {
+  font-family: roboto, sans-serif;
+  font-weight: 100;
+  position: absolute;
+  z-index: 10;
+  transform: rotate(90deg);
+  right: -20px;
+  top: 25%;
+}
+.panelInside-text {
+  font-family: roboto, sans-serif;
+  position: absolute;
+  color: var(--primary-font);
+  font-weight: 100;
+  font-size: 2rem;
+}
+.backgroundLetters {
+  font-family: roboto, sans-serif;
+  z-index: 3;
+  top: -80px;
+  left: -100px;
+  letter-spacing: -20px;
+  position: absolute;
+  color: var(--back-color);
+  opacity: 20%;
+  font-size: 600px;
+  font-weight: 500;
+  -webkit-text-stroke: 2px var(--primary-color);
+}
+.border-middle {
+  position: absolute;
+  top: 50%;
+  border-top: 1px solid var(--primary-color);
+  width: 100%;
+}
+.square {
+  position: absolute;
+  background: var(--primary-color);
+  height: 5px;
+  width: 5px;
+}
+.box-square-tr {
+  right: 0;
+  top: 0;
+}
+.box-square-tl {
+  z-index: 7;
+  background: var(--back-color);
+  left: 0;
+  top: 0;
+}
+.box-square-br {
+  right: 0;
+  bottom: 0;
+}
+.box-square-bl {
+  z-index: 7;
+  background: var(--back-color);
+  left: 0;
+  bottom: 0;
+}
+.footer {
+  font-family: roboto, sans-serif;
+  position: absolute;
+  color: white;
+  font-size: .5rem;
+  font-style: italic;
+  bottom: 1%;
+  left: 2%;
+}
+.animResize {
+  animation: resize 2s ease forwards 1s;
+  height: 0px;
+}
+@keyframes resize {
+  0% {
+    height: 0px;
+    width: 750px;
+  }
+  84% {
+    height: 300px;
+    width: 750px;
+    opacity: 100%;
+  }
+  85% {}
+  89% {}
+  92% {}
+  100% {
+    opacity: 100%;
+    height: 300px;
+  }
+}
+.fadeIn {
+  visibility: hidden;
+  animation: fade-In 2s ease forwards 3s;
+}
+@keyframes fade-In {
+  0% {
+    opacity: 0%;
+  }
+  49% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  55% {
+    opacity: 0%;
+  }
+  60% {
+    opacity: 70%;
+  }
+  65% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+    visibility: visible;
+  }
+}
+.moveLeft {
+  animation: moveLeft 1.5s ease forwards 2s;
+  transform: translateX(80px);
+}
+@keyframes moveLeft {
+  0% {
+    transform: translateX(80px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.simpleScale {
+  animation: simpleScale 3s ease forwards 3s;
+  width: 0px;
+}
+@keyframes simpleScale {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 400px;
+  }
+}
+.flickerLetters {
+  animation: flickerLetters 6s ease infinite;
+}
+@keyframes flickerLetters {
+  0% {
+    opacity: 20%;
+  }
+  89% {
+    opacity: 20%;
+  }
+  90% {
+    opacity: 20%;
+  }
+  93% {
+    opacity: 18%;
+  }
+  95% {
+    opacity: 22%;
+  }
+  98% {
+    opacity: 17%;
+  }
+  100% {
+    opacity: 20%;
+  }
+}
+.flicker {
+  animation: flicker 10s ease infinite;
+  opacity: 100%;
+}
+@keyframes flicker {
+  0% {
+    opacity: 100%;
+  }
+  86% {
+    opacity: 100%;
+  }
+  87% {
+    opacity: 100%;
+  }
+  90% {
+    opacity: 70%;
+  }
+  92% {
+    opacity: 100%;
+  }
+  94% {
+    opacity: 65%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.littleMovement {
+  animation: littleMovement 2s ease forwards 3s;
+  width: 0px;
+}
+@keyframes littleMovement {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50px;
+  }
+}
+.boxScale {
+  animation: boxScale 1s ease forwards;
+  height: 0px;
+}
+@keyframes boxScale {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 500px;
+  }
+}
+.backTextMovement {
+  animation: backTextMovement 3.5s ease forwards;
+  top: -60px;
+}
+@keyframes backTextMovement {
+  0% {
+    top: -60px;
+  }
+  100% {
+    top: -80px;
+  }
+}

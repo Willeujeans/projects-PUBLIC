@@ -1,0 +1,17 @@
+Drop down tools works
+You can drag tools onto grid
+[ note ] works now
+[ title ] works now
+[ drawPad ] does not work yet
+
+ACCOUNTS--
+Log in screen
+Create an account with Email and password
+Save the username in a SQL database
+Store the text array with the username
+
+SAVE STATES--
+We need to save the box objects from the array into a text file for storage.
+[ BOX ]
+Type, X, Y, text
+

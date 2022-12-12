@@ -1,0 +1,250 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: roboto, sans-serif;
+  overflow-x: hidden;
+  display: block;
+}
+a {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.thinner {
+  font-weight: 100;
+}
+.hide {
+  animation: fadeOut .5s forwards;
+  visibility: visible;
+  transform: translateY(0px);
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0%;
+    visibility: hidden;
+    transform: translateY(-20px);
+  }
+}
+.show {
+  animation: fadeIn .5s ease forwards;
+  visibility: hidden;
+  transform: translateY(-20px);
+}
+.largeShow {
+  z-index: -1;
+  animation: fadeIn 2s ease forwards;
+  visibility: hidden;
+  transform: translateY(-20px);
+  width: 100%;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+    visibility: hidden;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 100%;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+}
+#dropDown {
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  background: black;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+ol {
+  list-style: none;
+  color: white;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.drop-item {
+  margin-top: 3rem;
+}
+.drop-item:hover {
+  color: #00cbc5;
+}
+.oval {
+  z-index: -1;
+  border: 2px solid #E5E5E5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  transition: all 2s;
+}
+#oval00 {
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  border-color: transparent !important;
+}
+#oval01 {
+  position: relative;
+  height: 100%;
+  width: 70%;
+}
+#oval02 {
+  position: relative;
+  height: 60%;
+  width: 70%;
+}
+#oval03 {
+  position: relative;
+  height: 40%;
+  width: 50%;
+}
+#oval04 {
+  visibility: hidden;
+}
+.pageBan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  color: white;
+  width: 100%;
+  height: 6rem;
+}
+.ban-title {
+  font-family: roboto, sans-serif;
+  margin: 1.5rem 2rem 3rem 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+#ban-burger {
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+}
+.ban-burger-line {
+  width: 100%;
+  height: 2px;
+  background: white;
+  transition: all 1s ease;
+}
+#ban-burger > .oneX {
+  position: absolute;
+  transform: rotate(45deg);
+  top: 50%;
+}
+#ban-burger > .twoX {
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 50%;
+}
+.intro {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0;
+  top: 7rem;
+  width: 100%;
+  height: 5rem;
+}
+.title-icon {
+  position: relative;
+  margin-top: 5rem;
+  padding: .7rem 1.5rem 1.3rem 1.5rem;
+  border-radius: 100%;
+  font-size: 6rem;
+  font-weight: 100;
+  background: #00cbc5;
+}
+.title-second {
+  color: black;
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 3rem 0rem 0rem 0rem;
+}
+.title-paragraph {
+  text-align: center;
+  padding: 0;
+  margin: 1rem 0rem 1rem 0rem;
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+.btn {
+  background: #00cbc5;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 1s;
+}
+.btn:hover {
+  background: white;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #00cbc5;
+  font-weight: 500;
+  color: #00cbc5;
+}
+.btnDark {
+  background: #00cbc5;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  border: 1px solid black;
+  border-radius: 12px;
+  font-weight: 400;
+  transition: all 1s;
+}
+.btnDark:hover {
+  background: #00cbc5;
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 12px;
+  border: 1px solid white;
+  font-weight: 500;
+  color: white;
+}
+.video {
+  margin-top: 2rem;
+  height: 270px;
+  width: 80%;
+  border-radius: 20px;
+  background: black;
+}
+.meat {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  left: 0;
+  align-items: center;
+  top: 42rem;
+  width: 100%;
+  height: 40rem;
+  background: #00cbc5;
+}
+.meat-title {
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.meat-paragraph {
+  font-weight: 100;
+  padding: 0rem 2rem 0rem 2rem;
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CommissionForm</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+<span id="bigBox" class="cont width70">
+<div style="width:80%;" class="cont background--main">
+  <h1>Commission Form</h1>
+  <form class="cont cont-space">
+    <input id="userEmail" class="roundedEdges" name="userEmail" type="email" placeholder="Email@" required />
+    <textarea id="description" class="roundedEdges" name="discription" type="text" placeholder="Pet description..." required></textarea>
+    <div style="width:90%;display:flex;flex-direction:row;">
+      <div id="planBox1" class="cont planBox roundedEdges">
+        <p>Digital file</p>
+        <p id="digitalPrice">$90</p>
+        <input id="planDigital" name="plan" type="radio" required/>
+      </div>
+      <div id="planBox2" class="cont planBox roundedEdges">
+        <p>Printed Poster</p>
+        <p id="printedPrice">$135</p>
+        <input id="planPrinted" name="plan" type="radio"/>
+      </div>
+      <div id="planBox3" class="cont planBox roundedEdges">
+        <p>Themed Printed Poster</p>
+        <p id="themedPrice">$150</p>
+        <input id="planThemed" name="plan" type="radio"/>
+      </div>
+    </div>
+    <label for="file-upload" class="roundedEdges custom-file-upload"> Photo Upload </label>
+    <input id="file-upload" type="file" name="file[]" multiple/>
+    <div id="fileDisplay"></div>
+    <button class="roundedEdges" id="submitButton" type="submit">Submit</button>
+  </form>
+</div>
+</span> 
+<script src="comission.js"></script>
+</body>
+</html>

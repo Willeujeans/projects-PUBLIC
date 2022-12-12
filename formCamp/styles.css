@@ -1,0 +1,197 @@
+body{
+    font-family: sans-serif;
+    background-image: url(https://lh5.googleusercontent.com/U82ZHOo3n7Ix5eR6efC_IJ2I85NQ1EXPf2_Skh1Z9DmXFyVVezk5HXomKNSleBlFMz0=w2400);
+    background-color:rgb(236, 206, 155);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1920px;
+    color:rgb(236, 206, 155);
+}
+
+input{
+    border-radius:5px;
+    border-style:none;
+    padding:5px;
+    background-color:rgb(236, 206, 155);
+}
+#survey-form{
+    margin: 0 auto 0 auto;
+    background: rgba(94, 66, 18, 0.9);
+    border-radius:10px;
+    padding:20px;
+    width:90%;
+    max-width:600px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    row-gap: 10px;
+}
+#name, #email,#number,#dropDown{
+    width:90%;
+    border-radius:5px;
+    border-style:none;
+    padding:5px;
+}
+#name-label, #email-label, #number-label{
+margin-bottom:3px;
+}
+.titleDiv{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+#title{
+    margin:0;
+    color:rgba(94, 66, 18, 1);
+}
+#description{
+    font-style: italic;
+    margin:0;
+    color:rgba(94, 66, 18, 1);
+    margin-bottom:10px;
+}
+.emotions{
+    display:flex;
+    flex-direction: column;
+}
+.labelDivRow{
+    display: flex;
+    flex-direction: row;
+    margin-top:10px;
+}
+.labelDivCol{
+    display: flex;
+    flex-direction: column;
+    margin-top:15px;
+}
+.cluster{
+    border-radius:5px;
+    background:rgba(0,0,0,.1);
+    padding: 20px;
+    width:90%;
+}
+
+.divTitle{
+    margin:0;
+}
+#submit{
+    border-radius:5px;
+    border-style:none;
+    width:100px;
+    padding:10px;
+    background:rgb(236, 206, 155);
+    color: rgba(94, 66, 18, 1);
+}
+#extraInput{
+    height:7rem;
+    background:rgb(236, 206, 155);
+    border-radius:5px;
+    border-style:none;
+    color:rgba(94, 66, 18, 1);
+    font-family:sans-serif;
+}
+#extraInput-label{
+    margin-bottom:5px;
+}
+
+.css-checkbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+#inputPreview {
+    margin-top:10px;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    justify-content: center;
+}
+.css-checkbox + label {
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    height: 27px;
+    color: rgb(236, 206, 155);
+}
+.css-checkbox + label::before {
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(236, 206, 155);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(236, 206, 155);
+    border-radius: 2px;
+    box-shadow: none;
+}
+.css-checkbox:checked + label::after {
+    content: " ";
+    background: rgb(178, 141, 78);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: center center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    font-size: 10px;
+    height: 27px;
+    width: 27px;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color:rgb(236, 206, 155);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid rgb(236, 206, 155);
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(178, 141, 78);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid rgb(178, 141, 78);
+}
+.labelLeftMarg{
+    margin-left:5px;
+}
+select{
+    color:rgb(236, 206, 155);
+    background:transparent;
+    border:1px solid rgb(236, 206, 155);
+    border-radius:5px;
+}
+input::placeholder{
+    color: rgba(94, 66, 18, 0.4);
+}

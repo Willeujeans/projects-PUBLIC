@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact Me</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="styleSheet" href="contact.css"/>
+</head>
+
+<body class="fontRob">
+<form class="contactMe fontRob" action="contact.php" method="post">
+  <div class="elemGroup fontRob">
+    <div class="emailBlock">
+      <input class="contactElem email fontRob" type="email" id="emailFrom" name="emailFrom" placeholder="from@" required>
+      <span class="fontRob fontRob--white">=></span>
+      <input class="contactElem email fontRob" type="email" id="emailTo" name="emailTo" placeholder="to@" required>
+      <div id="playButton">play</div>
+    </div>
+    <div>
+      <div class="toolBar">
+        <div class="fontRob fontRob--white toolButton" id="frameFlip">
+          <p></p>
+        </div>
+        <div class="fontRob fontRob--white toolButton" id="reset">
+          <p>x</p>
+        </div>
+        <div class="fontRob fontRob--white toolButton" id="symButton">
+          <p>=</p>
+        </div>
+        <div class="fontRob fontRob--white toolButton" id="cButBlack">
+          <p>&lhblk;</p>
+        </div>
+        <div class="fontRob fontRob--white toolButton" id="cButWhite">
+          <p>&lhblk;</p>
+        </div>
+        <div class="fontRob fontRob--white toolButton" id="cButOrange">
+          <p>&lhblk;</p>
+        </div>
+        <div class="fontRob fontRob--white toolButton" id="cButGreen">
+          <p>&lhblk;</p>
+        </div>
+        <div class="fontRob fontRob--white toolButton" id="cButBlue">
+          <p>&lhblk;</p>
+        </div>
+      </div>
+      <div id="holsterHolster">
+        <section id="canvasHolster"> </section>
+      </div>
+    </div>
+    <input class="contactElem title fontRob fontRob--white" type="text" id="title" name="title" placeholder="title" maxlength = "16" required>
+    <input type="text" id="result" name="result">
+    <button id="contactButton" classs="contactElem fontRob" type="submit"><span class="fontRob">send</span></button>
+  </div>
+</form>
+<script src="contact.js"></script>
+</body>
+</html>

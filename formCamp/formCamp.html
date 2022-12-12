@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset= "utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+
+<div class="titleDiv">
+	<h1 id="title">Survey Form</h1>
+	<p id="description">This is a survey form</p>
+</div>
+
+<form id="survey-form">
+<span class="cluster spacing">
+		<div class="labelDivCol">
+			<label id="name-label" for="name">Name</label>
+			<input id="name" type="text" placeholder="John Smith" required/>
+		</div>
+		<div class="labelDivCol">
+			<label id="email-label" for="email" >Email</label>
+			<input id="email" type="email" placeholder="@" required/>
+		</div>
+		<div class="labelDivCol">
+			<label id="number-label" for="number">Age</label>
+			<input id="number" type="number" min="1" max="5" placeholder="0"/>
+		</div>
+</span>
+
+<span class="cluster">
+	<div class="emotions">
+		<p class="divTitle">How did you feel about the trip?</p>
+		<div class="labelDivRow">
+			<input id="happy" name="emotion" type="radio" value="happy"/>
+			<label class="labelLeftMarg" for="happy">Happy</label>
+		</div>
+		<div class="labelDivRow">
+			<input id="neutral" name="emotion" type="radio" value="neutral"/>
+			<label class="labelLeftMarg" for="neutral">Neutral</label>
+		</div>
+		<div class="labelDivRow">
+			<input id="sad" name="emotion" type="radio" value="sad"/>
+			<label class="labelLeftMarg" for="sad">Sad</label>
+		</div>
+	</div>
+</span>
+
+<span class="cluster">
+	<label for="dropdown">Would you go again?</label>
+	<select id="dropdown">
+ 		<option value="no">no</option>
+ 		<option value="maybe">maybe</option>
+  		<option value="yes">yes</option>
+	</select>
+</span>
+
+<span class="cluster">
+	<p class="divTitle">Who are you?</p>
+	<div id="inputPreview">
+		<input value="cowboy" name="cssCheckbox" id="demo_opt_1" type="checkbox" class="css-checkbox">
+		<label class="lightFont" for="demo_opt_1">Cowboy</label>
+		<input value="hiker" name="cssCheckbox" id="demo_opt_2" type="checkbox" class="css-checkbox">
+		<label class="lightFont" for="demo_opt_2">Hiker</label>
+		<input value="goth" name="cssCheckbox" id="demo_opt_3" type="checkbox" class="css-checkbox">
+		<label class="lightFont" for="demo_opt_3">Goth</label>
+	</div>
+</span>
+
+<span class="cluster">
+	<div class="labelDivCol">
+		<label id="extraInput-label" for="extraInput">Any input?</label>
+		<textarea id="extraInput"></textarea>
+	</div>	
+</span>
+<button id="submit" type="submit">submit</button>
+</form>
+
+</body>
+</html>

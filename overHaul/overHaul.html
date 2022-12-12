@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>overHAUL</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+<link rel="styleSheet" href="overHaul-style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+</head>
+
+<body>
+<div class="largeContainer">
+  <div class="pageBan">
+    <p class="ban-title"><span class="thinner">over</span>HAUL</p>
+    <div id="ban-burger">
+      <div class = "ban-burger-line" id="line0"></div>
+      <div class = "ban-burger-line" id="line1"></div>
+      <div class = "ban-burger-line" id="line2"></div>
+    </div>
+  </div>
+  <div id="dropDown">
+    <ol>
+      <li class = "drop-item"><a>HOME</a></li>
+      <li class = "drop-item"><a>PROJECTS</a></li>
+      <li class = "drop-item"><a>PLANS</a></li>
+      <li class = "drop-item"><a>SHOP</a></li>
+      <li class = "drop-item"><a>NETWORKING</a></li>
+      <li class = "drop-item"><a>ABOUT US</a></li>
+      <li class = "drop-item"><a>CONTACT</a></li>
+    </ol>
+  </div>
+  <div class="intro largeShow"> <span class="title-icon">@</span>
+    <h2 class="title-second"><span class="thinner">over</span>HAUL</h2>
+    <h3 class="title-paragraph">Faster connections with less drag.</h3>
+    <a class="btn">GO <span class="thinner">over</span>HAUL</a>
+    <div class="oval w-450 h-150 op-50 t-nine"></div>
+    <div id="oval00" class="oval">
+      <div id="oval01" class="oval">
+        <div id="oval02" class="oval">
+          <div id="oval03" class="oval">
+            <div id="oval04"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="meat">
+    <p class="meat-title">LAUNCH ANNOUNCEMENT!</p>
+    <p class="meat-paragraph">To hear more about <span class="thinner">over</span>HAUL, check out our launch video :&#41;</p>
+    <a class="btnDark">WATCH ON YOUTUBE</a>
+    <div class="video"></div>
+  </div>
+</div>
+<script>
+	var line0 = document.getElementById("line0");
+	var line2 = document.getElementById("line2");
+	var burger = document.getElementById("ban-burger");
+	var dropDown = document.getElementById("dropDown");
+	var canOpen = true;
+	burger.addEventListener("click", function () {
+		if(canOpen == true){
+	canOpen = false;
+	line0.classList.add("oneX");
+	line1.style.opacity = "0%";
+	line2.classList.add("twoX");
+	dropDown.classList.remove("hide");
+	dropDown.classList.add("show");
+		}else{
+	canOpen = true;
+	line0.classList.remove("oneX");
+	line1.style.opacity = "100%";
+	line2.classList.remove("twoX");
+	dropDown.classList.remove("show");
+	dropDown.classList.add("hide");
+		}
+	})
+	var ovalCount = 0;
+	function colorOvals(){
+		var currentOval = document.getElementById("oval0"+ovalCount);
+		var lastCalc = Math.max(0, ovalCount - 1);
+		var lastOval = document.getElementById("oval0"+lastCalc);
+		lastOval.style.borderColor = "#E5E5E5";
+		currentOval.style.borderColor = "grey";
+		ovalCount++;
+		if(ovalCount>4){
+			ovalCount=0;
+			setTimeout(colorOvals, 1000);
+		}else{
+			setTimeout(colorOvals, 1000);
+		}
+	}
+	colorOvals();
+	</script>
+</body>
+</html>

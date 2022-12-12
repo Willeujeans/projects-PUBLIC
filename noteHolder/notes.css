@@ -1,0 +1,162 @@
+    body,html{
+    width:100%;
+    height:100%;
+    background: rgb(20,20,20);
+    font-family:'Roboto Mono',monospace, sans-serif;
+}
+h1,h2,h3,p,div,body,html,li,ol{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style:none;
+}
+#header{
+    z-index:2;
+    position:fixed;
+    right:0;
+    top:0;
+    display:flex;
+    flex-direction:row;
+    align-items: flex-end;
+    height:32px;
+    width:128px;
+}
+#toolButton{
+    cursor:pointer;
+    position:absolute;
+    right:0;
+    top:0;
+    width:128px;
+    height:32px;
+    background:orange;
+}
+#toolBar{
+    position:absolute;
+    right:0;
+    top:0;
+    width:128px;
+    padding-bottom:12px;
+    border-bottom-left-radius:5px;
+    opacity:0%;
+    margin-top:32px;
+    background:rgba(255,178,0,.05);
+}
+.toolList{
+    display:flex;
+    flex-direction:column;
+    color:orange;
+    font-size:1.3rem;
+    text-align:center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+.tool{
+    margin-top:1rem;
+}
+#grid{
+    z-index:0;
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.box{
+    width:300px;
+    position:absolute;
+}
+.note{
+    width:300px;
+    height:200px;
+}
+.boxHeading{
+    width:15%;
+    height:16px;
+    background:orange;
+    padding-bottom:5px;
+    padding-left:3px;
+    border-right:1px solid orange;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.noteInsideText{
+    font-family:'Roboto Mono';
+    border-style:none;
+    z-index: 2;
+    background:rgba(255, 165, 0,.05);
+    color:white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border:1px solid orange;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.titleHeading{
+    width:18%;
+    height:16px;
+    background:orange;
+    padding-bottom:5px;
+    padding-left:3px;
+    border-right:1px solid orange;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.titleText{
+    overflow:hidden;
+    font-family:'Roboto Mono';
+    background:transparent;
+    text-align:center;
+    border:1px solid orange;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    z-index: 2;
+    font-size:2rem;
+    color:orange;
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.shrinkBox{
+    animation: shrinkBox 1s;
+    height:0%;
+    opacity:0%;
+    pointer-events: none;
+}
+.growBox{
+    animation: growBox 1s;
+    height:100%;
+    opacity:100%;
+    pointer-events: all;
+}
+@keyframes shrinkBox{
+    0%{
+    opacity:100%;
+    height:100%;
+    }
+    10%{
+    height:105%;
+    }
+    99%{
+    height:0%;
+    }
+    100%{
+    opacity:0%;
+    }
+}
+
+@keyframes growBox{
+    0%{
+    opacity:0%;
+    height:0%;
+    }
+    90%{
+    height:105%;
+    }
+    100%{
+    opacity:100%;
+    height:100%;
+    }
+}

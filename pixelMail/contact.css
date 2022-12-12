@@ -1,0 +1,167 @@
+body {
+  background: rgba(31, 31, 31, 1.00);
+}
+#displayText {
+  background: gray;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.fontRob {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  color: black;
+  text-decoration: none;
+}
+.fontRob--white {
+  color: white !important;
+}
+.contactMe {
+  margin-top: 20px;
+}
+input::placeholder {
+  font-size: 1rem;
+  font-weight: 100;
+}
+.elemGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.contactElem {
+  border-radius: 5px;
+  border: 1px solid white;
+  text-align: center;
+}
+.email {
+  padding: 5px;
+}
+.title {
+  margin-top:18rem;
+  width: 16rem;
+  height: 3rem;
+  background: black;
+  font-size: 1.5rem;
+  border: 2px solid white;
+  z-index: 2;
+}
+.pixel{
+    transform:scale(1.5);
+}
+.pixel:hover{
+color:gray !important;
+}
+.title::placeholder {
+  color: white;
+  font-size: 1.5rem;
+}
+.backGraph{
+  background: white;
+  border-radius: 10px;
+  padding: 5px;
+  padding-bottom:8px;
+}
+.selectedTool {
+  height: .8rem !important;
+  transform: translateY(5px) !important;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  line-height: 1rem;
+}
+.fadeIn {
+  animation: fadeIn 3s forwards;
+  opacity: 0%;
+  transform: translateY(-25px);
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+button {
+  margin-top: 0px;
+  opacity: 0%;
+  transition: all 2s;
+  font-size: 1.2rem;
+  width: 6rem;
+  height: 2.2rem;
+  border: 0px;
+}
+.toolBar {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  height: 1.5rem;
+}
+.toolButton {
+  text-align: center;
+  height: 2rem;
+  border: 1px solid white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 0px;
+  padding: 5px;
+  width: 1rem;
+  cursor: pointer;
+  transform: translateY(1px);
+  transition: all 1s;
+  z-index: 0;
+}
+.toolButton > p {
+  position: absolute;
+  top: 0;
+  width: 1rem;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.toolButton:hover {
+  transform: translateY(-5px);
+  transition: all .2s ease;
+}
+#result {
+  visibility: hidden;
+}
+#cButBlack {
+  background: black;
+  color: black !important;
+}
+#cButWhite {
+  background: white !important;
+  color: white !important;
+}
+#cButOrange {
+  background: orange !important;
+  color: orange !important;
+}
+#cButGreen {
+  background: olive !important;
+  color: olive !important;
+}
+#cButBlue {
+  background: teal !important;
+  color: teal !important;
+}
+#frameFlip {}
+#playButton {
+  cursor: pointer;
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid white;
+  padding: 3px;
+}
+#contactButton{
+    cursor:pointer;
+}

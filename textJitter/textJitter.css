@@ -1,0 +1,25 @@
+body{
+    background:black;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+}
+.flicker{
+    height: 3rem;
+    overflow:hidden;
+    width:100%;
+}
+.marg1{
+    margin-top:1rem;
+}
+.backgroundText{
+    position:absolute;
+    z-index:-1;
+    margin:0;
+    padding:0;
+    left:50%;
+    top:50%;
+    transform:translateX(-50%) translateY(-50%);
+    font-size:30rem;
+    color: rgba(255,255,255,.1);
+}
